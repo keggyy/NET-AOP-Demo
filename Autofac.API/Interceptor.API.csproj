@@ -23,9 +23,5 @@
     <ProjectReference Include="..\Standard.Repository\Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Autofac\" />
-  </ItemGroup>
-
 
 </Project>

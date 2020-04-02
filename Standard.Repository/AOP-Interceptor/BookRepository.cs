@@ -17,7 +17,7 @@ namespace Repository.AOP_Interceptor
             context = demoContext;
         }
 
-        public async Task<Book> Add(string title, string author)
+        public virtual async Task<Book> Add(string title, string author)
         {
             var entity = await context.Books.AddAsync(new Book
             {
@@ -29,13 +29,13 @@ namespace Repository.AOP_Interceptor
             return entity.Entity;
         }
 
-        public async Task<List<Book>> GetBooks()
+        public virtual async Task<List<Book>> GetBooks()
         {
             var result = await context.Books.ToListAsync();
             return result;
         }
 
-        public async Task<Book> Update(Book book)
+        public virtual async Task<Book> Update(Book book)
         {
             var entity = context.Books.Update(book);
             entity.State = EntityState.Modified;

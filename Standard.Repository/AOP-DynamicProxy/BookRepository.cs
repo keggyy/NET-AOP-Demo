@@ -10,7 +10,7 @@ namespace Repository.AOP_DynamicProxy
 {
     public class BookRepository
     {
-        public Book Update(Book book)
+        public virtual Book Update(Book book)
         {
             using (var context = new DemoContext())
             {
