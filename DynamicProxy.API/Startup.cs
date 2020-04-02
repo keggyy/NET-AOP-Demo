@@ -48,8 +48,6 @@ namespace DynamicProxy.API
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            //builder.RegisterApiControllers();
-            //builder.RegisterModule(new AutofacModule());
             builder.Register(c => new CallLogger())
             .Named<IInterceptor>("logs");
 
