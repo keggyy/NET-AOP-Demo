@@ -9,9 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "AOP.DAL\DAL.csproj",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Standard.API", "AOP.API\Standard.API.csproj", "{9E980A54-B3F3-4A68-9E97-EBF77D1FDA23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interceptor.API", "Autofac.API\Interceptor.API.csproj", "{DBBF1701-4457-4D3B-9D69-2C8F279A010F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interceptor.API", "Autofac.API\Interceptor.API.csproj", "{DBBF1701-4457-4D3B-9D69-2C8F279A010F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProxy.API", "DynamicProxy.API\DynamicProxy.API.csproj", "{EF8ED5B0-AEC8-4ECD-9069-6202C0C5EECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicProxy.API", "DynamicProxy.API\DynamicProxy.API.csproj", "{EF8ED5B0-AEC8-4ECD-9069-6202C0C5EECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "script", "script", "{3C2D8DD2-8969-44CA-BEB1-C52091FF2A34}"
+	ProjectSection(SolutionItems) = preProject
+		script.sql = script.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
